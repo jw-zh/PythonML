@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>fd56d5b6-6080-4a7e-8e79-40be7f156146</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>PythonML.py</StartupFile>
+    <StartupFile>PerceptronTest.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,6 +22,18 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="AdalineTest.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AdaptiveLinearNeuronModel.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PerceptronModel.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PerceptronTest.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="PythonML.py" />
   </ItemGroup>
   <PropertyGroup>
