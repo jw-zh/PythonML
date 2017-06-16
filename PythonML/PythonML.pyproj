@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>fd56d5b6-6080-4a7e-8e79-40be7f156146</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>PerceptronTest.py</StartupFile>
+    <StartupFile>Classfication\test\KernalSVMWithScikit-learn.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,19 +22,43 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="AdalineTest.py">
+    <Compile Include="Classfication\test\AdalineTest.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="AdaptiveLinearNeuronModel.py">
+    <Compile Include="Classfication\model\AdaptiveLinearNeuronModel.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="PerceptronModel.py">
+    <Compile Include="Classfication\model\PerceptronModel.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="PerceptronTest.py">
+    <Compile Include="Classfication\test\KernalSVMWithScikit-learn.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classfication\test\LinearRegressionWithScikit-learn.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classfication\test\PerceptronTest.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classfication\test\PerceptronTestWithScikit-learn.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classfication\test\SupportVectorMachineWithScikit-learn.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="functions\plot_decision_regions.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="functions\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="PythonML.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Classfication\" />
+    <Folder Include="Classfication\model\" />
+    <Folder Include="Classfication\test\" />
+    <Folder Include="functions\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
