@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>fd56d5b6-6080-4a7e-8e79-40be7f156146</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Classfication\test\KernalSVMWithScikit-learn.py</StartupFile>
+    <StartupFile>data_preprocessing\feature_selection.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,28 +22,53 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Classfication\test\AdalineTest.py">
+    <Compile Include="classfication\scikit-learn\decision_tree.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Classfication\model\AdaptiveLinearNeuronModel.py">
+    <Compile Include="classfication\scikit-learn\k-nearest_neighbor.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Classfication\model\PerceptronModel.py">
+    <Compile Include="classfication\scikit-learn\kernal_svm.py" />
+    <Compile Include="classfication\scikit-learn\linear_regression.py" />
+    <Compile Include="classfication\scikit-learn\perceptron.py" />
+    <Compile Include="classfication\scikit-learn\random_forests.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Classfication\test\KernalSVMWithScikit-learn.py">
+    <Compile Include="classfication\scikit-learn\linear_svm.py" />
+    <Compile Include="classfication\test\AdalineTest.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Classfication\test\LinearRegressionWithScikit-learn.py">
+    <Compile Include="classfication\model\adaptive_linear_neuron.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Classfication\test\PerceptronTest.py">
+    <Compile Include="classfication\model\perceptron.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Classfication\test\PerceptronTestWithScikit-learn.py">
+    <Compile Include="classfication\test\PerceptronTest.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Classfication\test\SupportVectorMachineWithScikit-learn.py">
+    <Compile Include="data_preprocessing\feature_scaling.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="data_preprocessing\feature_selection.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="data_preprocessing\missing_data.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="data_preprocessing\partitioning_a_dataset.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="data_preprocessing\regularization.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test_data\iris.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test_data\wine.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test_data\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="functions\plot_decision_regions.py">
@@ -55,10 +80,13 @@
     <Compile Include="PythonML.py" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Classfication\" />
-    <Folder Include="Classfication\model\" />
-    <Folder Include="Classfication\test\" />
+    <Folder Include="classfication\" />
+    <Folder Include="classfication\model\" />
+    <Folder Include="classfication\scikit-learn\" />
+    <Folder Include="classfication\test\" />
     <Folder Include="functions\" />
+    <Folder Include="data_preprocessing\" />
+    <Folder Include="test_data\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

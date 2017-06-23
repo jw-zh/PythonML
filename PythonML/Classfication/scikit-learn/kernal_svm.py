@@ -14,9 +14,7 @@ y_xor = np.where(y_xor, 1, -1)
 
 import os
 import sys
-#script_path = os.getcwd() + '\\functions'
 sys.path.append(os.getcwd())
-#from plot_decision_regions import *
 from functions.plot_decision_regions import *
 from sklearn.svm import SVC
 
